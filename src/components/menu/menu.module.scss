@@ -1,0 +1,28 @@
+.menuContainer {
+  ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+
+    li {
+      a {
+        color: #a7a7a7;
+        text-decoration: none;
+        outline: none;
+
+        &:focus {
+          font-weight: bold;
+          color: antiquewhite;
+        }
+
+        &:hover {
+          font-weight: bold;
+          color: antiquewhite;
+        }
+      }
+    }
+  }
+}

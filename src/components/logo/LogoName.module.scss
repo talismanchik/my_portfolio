@@ -1,0 +1,12 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  span {
+    font-size: 1.75rem;
+    color: #a7a7a7;
+  }
+}
