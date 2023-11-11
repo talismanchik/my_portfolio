@@ -1,0 +1,38 @@
+:root {
+  --font-family-primary: 'Roboto', serif;
+
+  // line heights
+  --line-height-s: 16px;
+  --line-height-m: 24px;
+  --line-height-l: 32px;
+  --line-height-xl: 40px;
+  --line-height-xxl: 52px;
+
+  // font sizes
+  --font-size-xs: 0.75rem;
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.625rem;
+  --font-size-xxxl: 3rem;
+
+  // font weights
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  // social icon
+  --social-icon-width: 35px;
+  --social-icon-height: 35px;
+  --social-icon-width-hover: 37px;
+  --social-icon-height-hover: 37px;
+  --social-icon-gap: 5px;
+
+  // border
+  --border: 1px solid var(--primery-text);
+
+  // paddings
+  --padding-header-top: 20px;
+  --padding-footer-bottom: 30px;
+  --padding-container-left-right: 10%;
+}

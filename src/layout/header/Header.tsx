@@ -1,5 +1,3 @@
-//import styled from 'styled-components'
-
 import './Header.module.scss'
 
 import { LogoName } from '../../components/logo/Logo'
@@ -15,9 +13,3 @@ export const Header = () => {
     </header>
   )
 }
-
-// const StyledHeader = styled.header`
-//   background-color: antiquewhite;
-//   display: flex;
-//   justify-content: space-between;
-// `

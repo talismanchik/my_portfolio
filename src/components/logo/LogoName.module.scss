@@ -1,12 +1,13 @@
 .logoContainer {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  cursor: pointer;
+  // border: 1px solid #a7a7a7;
 
   span {
-    font-size: 1.75rem;
-    color: #a7a7a7;
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-l);
   }
 }

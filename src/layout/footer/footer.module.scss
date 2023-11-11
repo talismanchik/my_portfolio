@@ -1,0 +1,18 @@
+.footerContainer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  padding: 20px var(--padding-container-left-right) 5px;
+
+  text-align: center;
+
+  background: linear-gradient(0deg, #191919 40%, transparent);
+
+  span {
+    background: linear-gradient(45deg, #13b0f5 -2.06%, #e70faa 100%);
+    /* stylelint-disable */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

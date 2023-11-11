@@ -1,0 +1,42 @@
+.iconsContainer {
+  position: relative;
+
+  display: flex;
+  gap: var(--social-icon-gap);
+  align-items: center;
+  justify-content: center;
+
+  width: calc(4 * var(--social-icon-width) + 3 * var(--social-icon-gap));
+  min-height: 35px;
+
+  :nth-child(1) {
+    left: 0;
+  }
+
+  :nth-child(2) {
+    left: calc(1 * (var(--social-icon-width) + var(--social-icon-gap)));
+  }
+
+  :nth-child(3) {
+    left: calc(2 * (var(--social-icon-width) + var(--social-icon-gap)));
+  }
+
+  :nth-child(4) {
+    left: calc(3 * (var(--social-icon-width) + var(--social-icon-gap)));
+  }
+}
+
+.svgClass {
+  cursor: pointer;
+  position: absolute;
+
+  > svg {
+    width: var(--social-icon-width);
+    height: var(--social-icon-height);
+
+    &:hover {
+      width: var(--social-icon-width-hover);
+      height: var(--social-icon-height-hover);
+    }
+  }
+}
