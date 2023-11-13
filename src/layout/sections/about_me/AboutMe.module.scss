@@ -1,0 +1,80 @@
+.informationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+
+  width: 100%;
+  padding: 100px var(--padding-container-left-right) 0;
+
+  .section {
+    width: 100%;
+
+    // border: var(--border);
+
+    h2 {
+      margin: 0;
+      padding-top: 40px;
+      font-size: var(--font-size-xxl);
+    }
+
+    p {
+      padding-top: 30px;
+      font-size: var(--font-size-m);
+      letter-spacing: 1px;
+    }
+
+    .workExperienceWrapper {
+      display: flex;
+      flex-direction: column;
+
+      .workExperience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 20px 0;
+
+        border-bottom: 2px solid rgb(167 167 167 / 30%);
+
+        .jobInformTop {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          & h3 {
+            font-size: var(--font-size-xl);
+          }
+        }
+
+        .jobInformBottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          div a {
+            pointer-events: none;
+            padding-right: 5px;
+            outline: none;
+          }
+
+          .workLocation {
+            display: flex;
+            gap: 20px;
+
+            div a {
+              pointer-events: none;
+              cursor: context-menu;
+              padding-right: 5px;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

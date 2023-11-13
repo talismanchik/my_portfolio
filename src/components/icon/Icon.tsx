@@ -1,4 +1,4 @@
-// import s from './Icon.module.scss'
+import s from './Icon.module.scss'
 
 import iconsSprite from '../../assets/icons-sprite.svg'
 
@@ -11,7 +11,7 @@ type IconType = {
 }
 export const Icon = (props: IconType) => {
   return (
-    <a className={props.className} href={''}>
+    <a className={`${props.className} ${s.aContainer}`} href={''} role={'img'}>
       <svg
         fill={'none'}
         height={props.height || '35'}

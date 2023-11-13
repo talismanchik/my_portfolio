@@ -7,7 +7,12 @@
   // border: 1px solid #a7a7a7;
 
   span {
-    font-size: var(--font-size-xxl);
-    line-height: var(--line-height-l);
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-m);
+
+    background: linear-gradient(45deg, #e70faa -20%, #13b0f5 100%);
+    /* stylelint-disable */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

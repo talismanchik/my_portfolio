@@ -1,6 +1,6 @@
 .homeContainer {
-  padding: 320px var(--padding-container-left-right) 0;
-  //border: var(--border);
+  padding: 250px var(--padding-container-left-right) 50px;
+  width: 100%;
 
   .myInform {
     display: flex;
@@ -11,7 +11,7 @@
       margin-right: 20px;
 
       h1 {
-        font-size: var(--font-size-xxxl);
+        font-size: var(--font-size-xxxxl);
         line-height: var(--line-height-xxl);
 
         span {
@@ -25,17 +25,14 @@
 
     .avatarWrapper {
       position: relative;
-      width: 300px;
-      height: 300px;
+      width: 25vmin;
+      height: 25vmin;
       border-radius: 50%;
 
       &::before {
         content: '';
         position: absolute;
-        top: -9px;
-        bottom: -9px;
-        left: -9px;
-        right: -9px;
+        inset: -9px;
         background: linear-gradient(45deg, #13b0f5, #e70faa);
         border-radius: 50%;
         z-index: -1;

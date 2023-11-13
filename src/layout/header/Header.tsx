@@ -1,6 +1,6 @@
 import './Header.module.scss'
 
-import { LogoName } from '../../components/logo/Logo'
+import { LogoName } from '../../components/logo/LogoName.tsx'
 import { Menu } from '../../components/menu/menu'
 import { SocialItems } from '../../components/socialItems/SocialItems'
 
