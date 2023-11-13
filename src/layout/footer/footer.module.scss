@@ -9,10 +9,10 @@
 
   text-align: center;
 
-  background: linear-gradient(0deg, #191919 40%, transparent);
+  background: linear-gradient(0deg, #191919 30%, transparent);
 
   span {
-    background: linear-gradient(45deg, #13b0f5 -2.06%, #e70faa 100%);
+    background: linear-gradient(45deg, var(--linear-gradient-1), var(--linear-gradient-2) 100%);
     /* stylelint-disable */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

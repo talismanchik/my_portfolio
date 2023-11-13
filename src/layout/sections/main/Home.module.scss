@@ -11,11 +11,20 @@
       margin-right: 20px;
 
       h1 {
+        background: linear-gradient(135deg, var(--secondary-text) -10%, var(--primery-text) 20%);
+        /* stylelint-disable */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: var(--font-size-xxxxl);
         line-height: var(--line-height-xxl);
 
         span {
-          background: linear-gradient(45deg, #13b0f5 -2.06%, #e70faa 140%);
+          background: linear-gradient(
+            45deg,
+            var(--linear-gradient-1) -10%,
+            var(--linear-gradient-3) 30%,
+            var(--linear-gradient-2) 120%
+          );
           /* stylelint-disable */
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -25,15 +34,20 @@
 
     .avatarWrapper {
       position: relative;
-      width: 25vmin;
-      height: 25vmin;
+      width: 30vmin;
+      height: 30vmin;
       border-radius: 50%;
 
       &::before {
         content: '';
         position: absolute;
         inset: -9px;
-        background: linear-gradient(45deg, #13b0f5, #e70faa);
+        background: linear-gradient(
+          45deg,
+          var(--linear-gradient-1) -10%,
+          var(--linear-gradient-3) 20%,
+          var(--linear-gradient-2) 120%
+        );
         border-radius: 50%;
         z-index: -1;
       }

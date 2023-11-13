@@ -10,7 +10,12 @@
     font-size: var(--font-size-l);
     line-height: var(--line-height-m);
 
-    background: linear-gradient(45deg, #e70faa -20%, #13b0f5 100%);
+    background: linear-gradient(
+      45deg,
+      var(--linear-gradient-1) 0%,
+      var(--linear-gradient-3) 40%,
+      var(--linear-gradient-2) 120%
+    );
     /* stylelint-disable */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
