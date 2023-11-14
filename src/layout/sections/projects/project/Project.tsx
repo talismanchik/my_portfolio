@@ -1,6 +1,6 @@
 import s from './Project.module.scss'
 
-import { Icon } from '../../../../components/icon/Icon.tsx'
+import { Icon } from '../../../../components/icon/Icon'
 
 type projectType = {
   about: string
@@ -23,7 +23,16 @@ export const Project = ({ about, hrefCod, hrefWeb, name, src, stack }: projectTy
           {stack}
         </h4>
         <div className={s.refs}>
-          <a href={hrefWeb}>Preview</a>
+          <a href={hrefWeb}>
+            <Icon
+              className={s.svgClass}
+              height={'20'}
+              iconId={'linkChain'}
+              viewBox={'-1.5 -2 20 20'}
+              width={'20'}
+            />
+            Preview
+          </a>
           <a href={hrefCod}>
             <Icon
               className={s.svgClass}

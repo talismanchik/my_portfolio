@@ -54,7 +54,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       width: 100%;
+
+      color: var(--secondary-text);
+
+      & > a {
+        padding-left: 25px;
+      }
 
       & a {
         position: relative;
@@ -63,11 +70,9 @@
         align-items: center;
         justify-content: space-between;
 
-        //border: 1px solid #a7a7a7;
+        text-decoration: none;
 
-        &:nth-child(2) {
-          padding-left: 25px;
-        }
+        //border: 1px solid #a7a7a7;
 
         .svgClass {
           position: absolute;

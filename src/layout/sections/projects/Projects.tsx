@@ -1,6 +1,6 @@
 import s from './projects.module.scss'
 
-import { Project } from './project/Project.tsx'
+import { Project } from './project/Project'
 
 export const Projects = () => {
   return (
@@ -10,9 +10,7 @@ export const Projects = () => {
       <div className={s.projectsFlex}>
         <Project
           about={
-            'About project text about project. About project text about project. About project text\n' +
-            '          about project. About project text about project. About project text about project. About\n' +
-            '          project text about project.'
+            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project.'
           }
           hrefCod={'#'}
           hrefWeb={'#'}
@@ -21,21 +19,7 @@ export const Projects = () => {
         />
         <Project
           about={
-            'About project text about project. About project text about project. About project text\n' +
-            '          about project. About project text about project. About project text about project. About\n' +
-            '          project text about project.'
-          }
-          hrefCod={'#'}
-          hrefWeb={'#'}
-          name={'Name Project'}
-          src={'#'}
-          stack={'react, HTML, SCSS'}
-        />
-        <Project
-          about={
-            'About project text about project. About project text about project. About project text\n' +
-            '          about project. About project text about project. About project text about project. About\n' +
-            '          project text about project.'
+            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project.'
           }
           hrefCod={'#'}
           hrefWeb={'#'}
@@ -45,9 +29,17 @@ export const Projects = () => {
         />
         <Project
           about={
-            'About project text about project. About project text about project. About project text\n' +
-            '          about project. About project text about project. About project text about project. About\n' +
-            '          project text about project.'
+            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project.'
+          }
+          hrefCod={'#'}
+          hrefWeb={'#'}
+          name={'Name Project'}
+          src={'#'}
+          stack={'react, HTML, SCSS'}
+        />
+        <Project
+          about={
+            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project. '
           }
           hrefCod={'#'}
           hrefWeb={'#'}
