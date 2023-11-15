@@ -5,10 +5,18 @@ import { Icon } from '../icon/Icon'
 export const SocialItems = () => {
   return (
     <div className={s.iconsContainer}>
-      <Icon className={s.svgClass} iconId={'gitSocial'} viewBox={'-2.5 -2.5 35 35'} />
-      <Icon className={s.svgClass} iconId={'linkedIn'} viewBox={'-2.5 -2.5 35 35'} />
-      <Icon className={s.svgClass} iconId={'twitter'} viewBox={'-0.5 -0.5 35 35'} />
-      <Icon className={s.svgClass} iconId={'inst'} viewBox={'0.5 0.5 20 20'} />
+      <a className={s.svgClass} href={'#'}>
+        <Icon iconId={'gitSocial'} viewBox={'-2.5 -2.5 35 35'} />
+      </a>
+      <a className={s.svgClass} href={'#'}>
+        <Icon iconId={'linkedIn'} viewBox={'-2.5 -2.5 35 35'} />
+      </a>
+      <a className={s.svgClass} href={'https://t.me/EugeneNest'}>
+        <Icon iconId={'telegramm'} viewBox={'-2 -5 45 45'} />
+      </a>
+      <a className={s.svgClass} href={''}>
+        <Icon iconId={'inst'} viewBox={'0.5 0.5 20 20'} />
+      </a>
     </div>
   )
 }

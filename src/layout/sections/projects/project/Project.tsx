@@ -4,6 +4,7 @@ import { Icon } from '../../../../components/icon/Icon'
 
 type projectType = {
   about: string
+  classNameImg?: string
   hrefCod: string
   hrefWeb: string
   name: string
@@ -11,10 +12,20 @@ type projectType = {
   stack: string
 }
 
-export const Project = ({ about, hrefCod, hrefWeb, name, src, stack }: projectType) => {
+export const Project = ({
+  about,
+  classNameImg,
+  hrefCod,
+  hrefWeb,
+  name,
+  src,
+  stack,
+}: projectType) => {
   return (
     <div className={s.projectContainer}>
-      <div className={s.image}>{src && <img alt={name} src={src} />}</div>
+      <div className={s.image}>
+        {src && <img alt={name} className={`${classNameImg}`} src={src} />}
+      </div>
       <div className={s.projectInform}>
         <h3>{name}</h3>
         <p>{about}</p>
@@ -23,7 +34,7 @@ export const Project = ({ about, hrefCod, hrefWeb, name, src, stack }: projectTy
           {stack}
         </h4>
         <div className={s.refs}>
-          <a href={hrefWeb}>
+          <a className={s.ref} href={hrefWeb}>
             <Icon
               className={s.svgClass}
               height={'20'}
@@ -33,14 +44,8 @@ export const Project = ({ about, hrefCod, hrefWeb, name, src, stack }: projectTy
             />
             Preview
           </a>
-          <a href={hrefCod}>
-            <Icon
-              className={s.svgClass}
-              height={'20'}
-              iconId={'github'}
-              viewBox={'-1.5 -2 100 100'}
-              width={'20'}
-            />
+          <a className={s.ref} href={hrefCod}>
+            <Icon height={'20'} iconId={'github'} viewBox={'-1.5 -2 100 100'} width={'20'} />
             View Code
           </a>
         </div>

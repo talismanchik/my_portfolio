@@ -10,7 +10,7 @@
 
   // font sizes
   --font-size-xs: 0.875rem;
-  --font-size-s: 5rem;
+  --font-size-s: 1rem;
   --font-size-m: 1.125rem;
   --font-size-l: 1.25rem;
   --font-size-xl: 1.5rem;
@@ -36,4 +36,7 @@
   --padding-header-top: 20px;
   --padding-footer-bottom: 30px;
   --padding-container-left-right: 12%;
+
+  // hover transform
+  --length-persentage-Y-smail: 55%;
 }

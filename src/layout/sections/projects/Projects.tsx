@@ -1,5 +1,7 @@
 import s from './projects.module.scss'
 
+import portfolioIMG from '../../../assets/images/partfolio_screen.png'
+import smailIMG from '../../../assets/images/smail_screen.png'
 import { Project } from './project/Project'
 
 export const Projects = () => {
@@ -10,41 +12,44 @@ export const Projects = () => {
       <div className={s.projectsFlex}>
         <Project
           about={
-            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project.'
+            ' The form element to associate the button with its form owner. The value of this attribute must be the id of a form in the same document. (If this attribute is not set, the button is associated with its ancestor form element, if any.)'
           }
-          hrefCod={'#'}
+          classNameImg={'s.smail'}
+          hrefCod={'https://github.com/talismanchik/smail'}
           hrefWeb={'#'}
-          name={'Name Project'}
+          name={'Smail'}
+          src={smailIMG}
           stack={'react, HTML, SCSS'}
         />
         <Project
           about={
-            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project.'
+            ' The form element  its form owner. The value of this attribute must be the id of a form in the same document. (If this attribute is not set, the button is associated with its ancestor form element, if any.)'
           }
-          hrefCod={'#'}
+          classNameImg={'s.smail'}
+          hrefCod={'https://github.com/talismanchik/my_portfolio'}
           hrefWeb={'#'}
-          name={'Name Project'}
-          src={'#'}
+          name={'Portfolio'}
+          src={portfolioIMG}
           stack={'react, HTML, SCSS'}
         />
         <Project
           about={
-            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project.'
+            ' The form  associate the button with its form owner. The value of this attribute must be the id of a form in the same document. (If this attribute is not set, the button is associated with its ancestor form element, if any.)'
           }
           hrefCod={'#'}
           hrefWeb={'#'}
           name={'Name Project'}
-          src={'#'}
+          //src={'#'}
           stack={'react, HTML, SCSS'}
         />
         <Project
           about={
-            'About project text about project. About project text about project. About project text about project. About project text about project. About project text about project. '
+            ' The form element to  its form owner. The value of this attribute must be the id of a form in the same document. (If this attribute is not set, the button is associated with its ancestor form element, if any.)'
           }
           hrefCod={'#'}
           hrefWeb={'#'}
           name={'Name Project'}
-          src={'#'}
+          //src={'#'}
           stack={'react, HTML, SCSS'}
         />
       </div>

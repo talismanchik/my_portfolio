@@ -1,5 +1,3 @@
-import s from './Icon.module.scss'
-
 import iconsSprite from '../../assets/icons-sprite.svg'
 
 type IconType = {
@@ -11,16 +9,16 @@ type IconType = {
 }
 export const Icon = (props: IconType) => {
   return (
-    <a className={`${props.className} ${s.aContainer}`} href={''} role={'img'}>
-      <svg
-        fill={'none'}
-        height={props.height || '35'}
-        viewBox={props.viewBox || '0 0 30 30'}
-        width={props.width || '35'}
-        xmlns={'http://www.w3.org/2000/svg'}
-      >
-        <use xlinkHref={`${iconsSprite}#${props.iconId}`} />
-      </svg>
-    </a>
+    //<a className={`${props.className} ${s.aContainer}`} href={''} role={'img'}>
+    <svg
+      fill={'none'}
+      height={props.height || '35'}
+      viewBox={props.viewBox || '0 0 30 30'}
+      width={props.width || '35'}
+      xmlns={'http://www.w3.org/2000/svg'}
+    >
+      <use xlinkHref={`${iconsSprite}#${props.iconId}`} />
+    </svg>
+    //</a>
   )
 }

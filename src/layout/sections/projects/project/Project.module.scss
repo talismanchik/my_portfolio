@@ -1,13 +1,25 @@
 .projectContainer {
   overflow: hidden;
 
-  width: 20%;
+  width: 25%;
   min-width: 250px;
 
-  background-color: rgb(54 54 54);
+  background-color: #232323ff;
   border-radius: 25px;
+  box-shadow: 0 5px 10px #232323ff;
+
+  //box-shadow:
+  //  3px -3px 6px #e70faaff,
+  //  -3px 3px 6px #13b0f5ff;
+
+  &:hover {
+    box-shadow:
+      3px -3px 6px #490637,
+      -3px 3px 6px #052c3b;
+  }
 
   .image {
+    overflow: hidden;
     height: 225px;
     background: linear-gradient(
       45deg,
@@ -18,8 +30,13 @@
 
     & img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      transition-timing-function: linear;
+      transition-duration: 1.5s;
+
+      &:hover {
+        transform: translate(0, -68.45%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+      }
     }
   }
 
@@ -59,29 +76,16 @@
 
       color: var(--secondary-text);
 
-      & > a {
-        padding-left: 25px;
-      }
-
-      & a {
-        position: relative;
-
+      .ref {
         display: flex;
+        gap: 5px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         text-decoration: none;
 
-        //border: 1px solid #a7a7a7;
-
-        .svgClass {
-          position: absolute;
-          left: 0;
-
-          overflow: hidden;
-
-          width: 20px;
-          height: 20px;
+        &:hover {
+          transform: scale(1.1);
         }
       }
     }

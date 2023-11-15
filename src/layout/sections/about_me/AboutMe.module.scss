@@ -57,21 +57,22 @@
           justify-content: space-between;
           width: 100%;
 
-          div a {
-            pointer-events: none;
-            padding-right: 5px;
-            outline: none;
+          div {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            justify-content: center;
           }
 
           .workLocation {
             display: flex;
             gap: 20px;
 
-            div a {
-              pointer-events: none;
-              cursor: context-menu;
-              padding-right: 5px;
-              outline: none;
+            div {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              justify-content: center;
             }
           }
         }

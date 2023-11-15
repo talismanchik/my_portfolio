@@ -1,9 +1,10 @@
 .menuContainer {
+  min-width: 430px;
+
   ul {
     display: flex;
-    gap: 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     margin: 0;
     padding: 0;
@@ -17,16 +18,15 @@
         text-decoration: none;
         letter-spacing: 1.5px;
         outline: none;
+      }
 
-        &:focus-visible,
-        &:hover {
-          font-size: var(--font-size-l);
-          font-weight: var(--font-weight-bold);
-        }
+      &:hover,
+      &:focus-visible {
+        transform: scale(1.1);
+      }
 
-        &:active {
-          font-size: var(--font-size-s);
-        }
+      &:active {
+        transform: scale(0.9);
       }
     }
   }

@@ -34,9 +34,10 @@
     width: var(--social-icon-width);
     height: var(--social-icon-height);
 
+    //border: 1px solid #a7a7a7;
+
     &:hover {
-      width: var(--social-icon-width-hover);
-      height: var(--social-icon-height-hover);
+      transform: scale(1.15);
     }
   }
 }

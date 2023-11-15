@@ -18,16 +18,11 @@
   .techFlex {
     display: flex;
     flex-wrap: wrap;
-    gap: 3%;
+    gap: 30px;
     align-items: center;
     justify-content: space-around;
 
     width: 100%;
     padding-top: 30px;
-
-    & a {
-      pointer-events: none;
-      outline: none;
-    }
   }
 }

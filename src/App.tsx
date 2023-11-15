@@ -1,9 +1,10 @@
 import { Footer } from './layout/footer/footer'
 import { Header } from './layout/header/Header'
-import { AboutMe } from './layout/sections/about_me/AboutMe.tsx'
+import { AboutMe } from './layout/sections/about_me/AboutMe'
+import { Contacts } from './layout/sections/contacts/Contacts'
 import { Home } from './layout/sections/main/Home'
-import { Projects } from './layout/sections/projects/Projects.tsx'
-import { Technologies } from './layout/sections/technologies/Technologies.tsx'
+import { Projects } from './layout/sections/projects/Projects'
+import { Technologies } from './layout/sections/technologies/Technologies'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <Technologies />
       <Projects />
+      <Contacts />
       <Footer />
     </>
   )
