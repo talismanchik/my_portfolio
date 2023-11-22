@@ -4,7 +4,7 @@ import { Icon } from '../../../components/icon/Icon'
 
 export const Technologies = () => {
   return (
-    <div className={s.techContainer}>
+    <section className={s.techContainer}>
       <h2> Tech Stack</h2>
       <span>Technologies I&apos;ve been working with recently</span>
       <div className={s.techFlex}>
@@ -18,6 +18,6 @@ export const Technologies = () => {
         <Icon height={'120'} iconId={'github'} viewBox={'-1 -1 90 90'} width={'120'} />
         <Icon height={'120'} iconId={'figma'} viewBox={'-15 0 90 90'} width={'120'} />
       </div>
-    </div>
+    </section>
   )
 }

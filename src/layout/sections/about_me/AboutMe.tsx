@@ -6,10 +6,10 @@ import { Experience } from './experience/Experience'
 
 export const AboutMe = () => {
   return (
-    <div className={s.informationContainer}>
+    <section className={s.informationContainer}>
       <About />
       <Experience />
       <Education />
-    </div>
+    </section>
   )
 }

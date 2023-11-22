@@ -3,7 +3,7 @@ import s from './Home.module.scss'
 import avatar from '../../../assets/images/avatar.jpg'
 export const Home = () => {
   return (
-    <div className={s.homeContainer}>
+    <section className={s.homeContainer}>
       <div className={s.myInform}>
         <div className={s.textWrapper}>
           <h1>
@@ -12,7 +12,7 @@ export const Home = () => {
             My name is
             <br />
             <span>Eugene Nesterenko</span>
-            <br /> I build things for web.
+            <br />I build things for web.
           </h1>
         </div>
         <div className={s.avatarWrapper}>
@@ -20,6 +20,6 @@ export const Home = () => {
         </div>
       </div>
       <div></div>
-    </div>
+    </section>
   )
 }

@@ -33,11 +33,13 @@
   > svg {
     width: var(--social-icon-width);
     height: var(--social-icon-height);
+    fill: var(--primery-text);
 
     //border: 1px solid #a7a7a7;
 
     &:hover {
       transform: scale(1.15);
+      fill: var(--secondary-text);
     }
   }
 }
