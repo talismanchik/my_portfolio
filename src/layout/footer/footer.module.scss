@@ -1,6 +1,7 @@
 .footerContainer {
   position: fixed;
   bottom: 0;
+  margin: 0 auto;
 
   font-size: var(--font-size-xs);
 
@@ -11,12 +12,19 @@
 
   background: linear-gradient(0deg, #191919 30%, transparent);
 
-  span {
-    background: linear-gradient(45deg, var(--linear-gradient-1), var(--linear-gradient-2) 100%);
-    /* stylelint-disable */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  div {
+    margin: 0 auto;
+    span {
+      background: linear-gradient(45deg, var(--linear-gradient-1), var(--linear-gradient-2) 100%);
+      /* stylelint-disable */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @media screen and (width < 400px) {
+      max-width: 260px;
+    }
   }
+
   @media screen and (width < 1000px) {
     padding-right: 5%;
     padding-left: 5%;
