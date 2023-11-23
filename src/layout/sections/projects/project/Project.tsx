@@ -42,7 +42,7 @@ export const Project = ({
               viewBox={'-1.5 -2 20 20'}
               width={'20'}
             />
-            Preview
+            <span>Preview</span>
           </a>
           <a className={s.ref} href={hrefCod}>
             <Icon height={'20'} iconId={'github'} viewBox={'-1.5 -2 100 100'} width={'20'} />

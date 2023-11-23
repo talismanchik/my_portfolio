@@ -1,0 +1,12 @@
+.buttonWrapper {
+  height: 35px;
+
+  svg {
+    fill: var(--primery-text);
+    stroke: var(--primery-text);
+  }
+
+  @media screen and (width > 768px) {
+    display: none;
+  }
+}

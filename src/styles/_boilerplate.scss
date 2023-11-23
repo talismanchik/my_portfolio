@@ -22,10 +22,6 @@ option {
   color: inherit;
 }
 
-a:visited {
-  color: inherit;
-}
-
 body {
   margin: 0;
   box-sizing: border-box;
@@ -43,4 +39,23 @@ section {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  padding: 0;
 }

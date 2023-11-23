@@ -1,6 +1,4 @@
 .iconsContainer {
-  position: relative;
-
   display: flex;
   gap: var(--social-icon-gap);
   align-items: center;
@@ -8,38 +6,23 @@
 
   width: calc(4 * var(--social-icon-width) + 3 * var(--social-icon-gap));
   min-height: 35px;
-
-  :nth-child(1) {
-    left: 0;
-  }
-
-  :nth-child(2) {
-    left: calc(1 * (var(--social-icon-width) + var(--social-icon-gap)));
-  }
-
-  :nth-child(3) {
-    left: calc(2 * (var(--social-icon-width) + var(--social-icon-gap)));
-  }
-
-  :nth-child(4) {
-    left: calc(3 * (var(--social-icon-width) + var(--social-icon-gap)));
-  }
 }
 
 .svgClass {
   cursor: pointer;
-  position: absolute;
 
   > svg {
     width: var(--social-icon-width);
     height: var(--social-icon-height);
     fill: var(--primery-text);
 
-    //border: 1px solid #a7a7a7;
-
     &:hover {
       transform: scale(1.15);
       fill: var(--secondary-text);
     }
+  }
+
+  @media screen and (width < 768px) {
+    display: none;
   }
 }

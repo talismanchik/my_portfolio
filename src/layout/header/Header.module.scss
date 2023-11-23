@@ -15,5 +15,13 @@ header {
 
   background: linear-gradient(0deg, transparent, #191919 50%);
 
-  //border: var(--border);
+  @media screen and (width < 1000px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  @media screen and (width < 768px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 }
