@@ -12,17 +12,11 @@
 
   background: linear-gradient(0deg, #191919 30%, transparent);
 
-  div {
-    margin: 0 auto;
-    span {
-      background: linear-gradient(45deg, var(--linear-gradient-1), var(--linear-gradient-2) 100%);
-      /* stylelint-disable */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    @media screen and (width < 400px) {
-      max-width: 260px;
-    }
+  span {
+    background: linear-gradient(45deg, var(--linear-gradient-1), var(--linear-gradient-2) 100%);
+    /* stylelint-disable */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @media screen and (width < 1000px) {
@@ -33,6 +27,6 @@
   @media screen and (width < 768px) {
     padding-right: 5%;
     padding-left: 5%;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 }
