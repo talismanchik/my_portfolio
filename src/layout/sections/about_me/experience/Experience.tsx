@@ -25,10 +25,7 @@ export const Experience = () => {
                 Minsk
               </div>
             </div>
-            <div>
-              <Icon height={'12'} iconId={'calendar'} viewBox={'0 0 16 12'} width={'16'} />
-              October 2023 - now
-            </div>
+            <div className={s.period}>October 2023 - now</div>
           </div>
         </div>
         <div className={s.workExperience}>
@@ -49,10 +46,7 @@ export const Experience = () => {
                 Vilnius
               </div>
             </div>
-            <div>
-              <Icon height={'12'} iconId={'calendar'} viewBox={'0 0 16 12'} width={'16'} />
-              June 2023 - now
-            </div>
+            <div className={s.period}>June 2023 - now</div>
           </div>
         </div>
       </div>

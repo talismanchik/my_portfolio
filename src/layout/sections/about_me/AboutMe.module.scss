@@ -5,24 +5,29 @@
   align-items: start;
   justify-content: center;
 
-  padding: 100px var(--padding-container-left-right) 0;
-
   .section {
     width: 100%;
-
-    // border: var(--border);
 
     h2 {
       margin: 0;
       padding-top: 40px;
       font-size: var(--font-size-xxl);
       color: var(--secondary-text);
+
+      @media screen and (width < 768px) {
+        padding-top: 20px;
+        font-size: var(--font-size-xl);
+      }
     }
 
     p {
       padding-top: 30px;
       font-size: var(--font-size-m);
       letter-spacing: 1px;
+
+      @media screen and (width < 768px) {
+        padding-top: 10px;
+      }
     }
 
     .workExperienceWrapper {
@@ -47,6 +52,11 @@
 
           & h3 {
             font-size: var(--font-size-xl);
+
+            @media screen and (width < 768px) {
+              margin: 10px 0;
+              font-size: var(--font-size-l);
+            }
           }
         }
 
@@ -56,16 +66,21 @@
           justify-content: space-between;
           width: 100%;
 
-          div {
+          .workLocation {
             display: flex;
             gap: 5px;
             align-items: center;
             justify-content: center;
+
+            @media screen and (width < 768px) {
+              flex-direction: column;
+              align-items: start;
+            }
           }
 
-          .workLocation {
+          .period {
             display: flex;
-            gap: 20px;
+            gap: 5px;
 
             div {
               display: flex;
@@ -73,6 +88,12 @@
               align-items: center;
               justify-content: center;
             }
+          }
+
+          @media screen and (width < 768px) {
+            align-items: start;
+            font-size: var(--font-size-xs);
+            line-height: var(--line-height-s);
           }
         }
       }

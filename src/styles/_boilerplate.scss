@@ -39,6 +39,11 @@ section {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+  padding: 100px var(--padding-container-left-right) 0;
+
+  @media screen and (width < 768px) {
+    padding-inline: 5%;
+  }
 }
 
 a {

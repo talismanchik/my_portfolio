@@ -25,10 +25,7 @@ export const Education = () => {
                 Vilnius
               </div>
             </div>
-            <div>
-              <Icon height={'12'} iconId={'calendar'} viewBox={'0 0 16 12'} width={'16'} />
-              November 2022 - now
-            </div>
+            <div className={s.period}>November 2022 - now</div>
           </div>
         </div>
       </div>
