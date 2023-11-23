@@ -18,5 +18,9 @@
     /* stylelint-disable */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (width < 768px) {
+      font-size: var(--font-size-xs);
+    }
   }
 }
