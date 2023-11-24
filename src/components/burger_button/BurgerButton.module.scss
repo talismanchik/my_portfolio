@@ -1,5 +1,11 @@
 .buttonWrapper {
+  z-index: 3;
+
+  grid-area: nav;
+  grid-column: 2;
+
   height: 35px;
+  margin-left: auto;
 
   svg {
     fill: var(--primery-text);

@@ -1,28 +1,41 @@
-.iconsContainer {
+@mixin icons {
   display: flex;
+  grid-area: icons;
   gap: var(--social-icon-gap);
   align-items: center;
   justify-content: center;
 
   width: calc(4 * var(--social-icon-width) + 3 * var(--social-icon-gap));
   min-height: 35px;
-}
+  margin: 0;
+  padding: 0;
 
-.svgClass {
-  cursor: pointer;
+  li {
+    .svgClass {
+      cursor: pointer;
 
-  > svg {
-    width: var(--social-icon-width);
-    height: var(--social-icon-height);
-    fill: var(--primery-text);
+      > svg {
+        width: var(--social-icon-width);
+        height: var(--social-icon-height);
+        fill: var(--primery-text);
 
-    &:hover {
-      transform: scale(1.15);
-      fill: var(--secondary-text);
+        &:hover {
+          transform: scale(1.15);
+          fill: var(--secondary-text);
+        }
+      }
     }
   }
+}
+
+.iconsContainer {
+  @include icons;
 
   @media screen and (width < 768px) {
     display: none;
   }
+}
+
+.iconsPhoneContainer {
+  @include icons;
 }

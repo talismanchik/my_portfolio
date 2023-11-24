@@ -4,17 +4,24 @@ header {
   right: 0;
   left: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-area: l;
+  grid-template-areas: 'logo nav';
+  grid-template-columns: 95px auto;
 
   width: 100%;
-
   max-width: 1370px;
   margin: 0 auto;
   padding: var(--padding-header-top) var(--padding-container-left-right) 30px;
 
   background: linear-gradient(0deg, transparent, #191919 50%);
+
+  nav {
+    display: grid;
+    grid-area: nav;
+    grid-template-areas: 'menu icons';
+    grid-template-columns: auto 155px;
+  }
 
   @media screen and (width < 1000px) {
     padding-right: 5%;
@@ -24,5 +31,21 @@ header {
   @media screen and (width < 768px) {
     padding-right: 5%;
     padding-left: 5%;
+
+    & nav {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+
+      padding-top: 70px;
+      padding-right: 95px;
+    }
   }
+}
+
+.headerOpenPhone {
+  padding-bottom: 100%;
+  background: linear-gradient(0deg, transparent -20%, #191919 63%);
 }
