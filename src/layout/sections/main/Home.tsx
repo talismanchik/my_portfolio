@@ -12,7 +12,7 @@ export const Home = () => {
             My name is
             <br />
             <span>Eugene Nesterenko</span>
-            <br />I build things for web.
+            <br />I build things for web
           </h1>
         </div>
         <div className={s.avatarWrapper}>
