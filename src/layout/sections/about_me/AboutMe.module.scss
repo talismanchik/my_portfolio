@@ -37,25 +37,30 @@
       .workExperience {
         display: flex;
         flex-direction: column;
+        gap: 5px;
         align-items: center;
         justify-content: space-between;
 
-        padding: 20px 0;
+        padding: 25px 0;
 
         border-bottom: 2px solid rgb(167 167 167 / 30%);
 
         .jobInformTop {
           display: flex;
+          gap: 20px;
           align-items: center;
           justify-content: space-between;
+
           width: 100%;
 
           & h3 {
             font-size: var(--font-size-xl);
 
             @media screen and (width < 768px) {
+              max-width: 200px;
               margin: 10px 0;
               font-size: var(--font-size-l);
+              line-height: 20px;
             }
           }
         }

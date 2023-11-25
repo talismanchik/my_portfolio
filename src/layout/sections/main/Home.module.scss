@@ -1,12 +1,13 @@
 .homeContainer {
   box-sizing: border-box;
-  padding-top: 200px;
+  padding-top: 130px;
   // padding: 250px var(--padding-container-left-right) 50px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
 
   .textWrapper {
     margin-right: 20px;
@@ -61,7 +62,7 @@
     .avatar {
       width: 100%;
       object-fit: none;
-      object-position: 47% 37%;
+      object-position: 47% 36%;
       border-radius: 50%;
     }
   }
