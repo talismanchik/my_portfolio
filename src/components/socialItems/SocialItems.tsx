@@ -10,12 +10,12 @@ export const SocialItems = (props: SocialItemsType) => {
   return (
     <ul className={props.phoneMode ? s.iconsPhoneContainer : s.iconsContainer}>
       <li>
-        <a className={s.svgClass} href={'#'}>
+        <a className={s.svgClass} href={'https://github.com/talismanchik'}>
           <Icon iconId={'gitSocial'} viewBox={'-2.5 -2.5 35 35'} />
         </a>
       </li>
       <li>
-        <a className={s.svgClass} href={'#'}>
+        <a className={s.svgClass} href={'https://www.linkedin.com/in/eugene-nesterenko-2a25b2265/'}>
           <Icon iconId={'linkedIn'} viewBox={'-2.5 -2.5 35 35'} />
         </a>
       </li>
@@ -25,7 +25,7 @@ export const SocialItems = (props: SocialItemsType) => {
         </a>
       </li>
       <li>
-        <a className={s.svgClass} href={''}>
+        <a className={s.svgClass} href={'https://www.instagram.com/eugene_nest/'}>
           <Icon iconId={'inst'} viewBox={'0.5 0.5 20 20'} />
         </a>
       </li>

@@ -23,5 +23,12 @@
 
     width: 100%;
     padding-top: 30px;
+
+    @media screen and (width < 500px) {
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
   }
 }

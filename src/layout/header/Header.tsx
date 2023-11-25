@@ -14,7 +14,12 @@ export const Header = () => {
   }
 
   return (
-    <header className={`${isOpen && s.headerOpenPhone}`}>
+    <header
+      className={`${isOpen && s.headerOpenPhone}`}
+      onClick={() => {
+        isOpen && setIsOpen(false)
+      }}
+    >
       <LogoName />
       <BurgerButton isOpen={isOpen} onClick={onClickHandler} />
       <nav>
