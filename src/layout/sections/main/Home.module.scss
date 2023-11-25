@@ -1,65 +1,77 @@
 .homeContainer {
+  box-sizing: border-box;
   padding-top: 200px;
   // padding: 250px var(--padding-container-left-right) 50px;
 
-  .myInform {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-    .textWrapper {
-      margin-right: 20px;
+  .textWrapper {
+    margin-right: 20px;
 
-      h1 {
-        background: linear-gradient(135deg, var(--secondary-text) -10%, var(--primery-text) 20%);
-        /* stylelint-disable */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: var(--font-size-xxxxl);
-        line-height: var(--line-height-xxl);
+    h1 {
+      background: linear-gradient(135deg, var(--secondary-text) -10%, var(--primery-text) 20%);
+      /* stylelint-disable */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: var(--font-size-xxxxl);
+      line-height: var(--line-height-xxl);
 
-        span {
-          background: linear-gradient(
-            45deg,
-            var(--linear-gradient-1) -10%,
-            var(--linear-gradient-3) 30%,
-            var(--linear-gradient-2) 120%
-          );
-          /* stylelint-disable */
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
-    }
-
-    .avatarWrapper {
-      position: relative;
-      width: 250px;
-      height: 250px;
-      min-width: 250px;
-      min-height: 250px;
-      border-radius: 50%;
-
-      &::before {
-        content: '';
-        position: absolute;
-        inset: -9px;
+      span {
         background: linear-gradient(
           45deg,
           var(--linear-gradient-1) -10%,
-          var(--linear-gradient-3) 20%,
+          var(--linear-gradient-3) 30%,
           var(--linear-gradient-2) 120%
         );
-        border-radius: 50%;
-        z-index: -1;
+        /* stylelint-disable */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
+    }
+  }
 
-      .avatar {
-        width: 100%;
-        object-fit: none;
-        object-position: 47% 37%;
-        border-radius: 50%;
+  .avatarWrapper {
+    margin: 6px;
+    align-self: end;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 50%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      //margin-right: 6px;
+      inset: -6px;
+      background: linear-gradient(
+        45deg,
+        var(--linear-gradient-1) -10%,
+        var(--linear-gradient-3) 20%,
+        var(--linear-gradient-2) 120%
+      );
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .avatar {
+      width: 100%;
+      object-fit: none;
+      object-position: 47% 37%;
+      border-radius: 50%;
+    }
+  }
+  @media screen and (width < 950px) {
+    flex-direction: column;
+    align-items: start;
+    .textWrapper {
+      h1 {
+        font-size: 2rem;
+        line-height: 36px;
       }
     }
   }
