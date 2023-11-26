@@ -12,6 +12,9 @@ export const Header = () => {
   const onClickHandler = () => {
     setIsOpen(!isOpen)
   }
+  const onlyCloseHandler = () => {
+    setIsOpen(false)
+  }
 
   return (
     <header
@@ -23,7 +26,7 @@ export const Header = () => {
       <LogoName />
       <BurgerButton isOpen={isOpen} onClick={onClickHandler} />
       <nav>
-        <Menu phoneMode={isOpen} />
+        <Menu onClick={onlyCloseHandler} phoneMode={isOpen} />
         <SocialItems phoneMode={isOpen} />
       </nav>
     </header>

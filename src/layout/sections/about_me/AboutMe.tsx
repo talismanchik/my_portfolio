@@ -6,7 +6,7 @@ import { Experience } from './experience/Experience'
 
 export const AboutMe = () => {
   return (
-    <section className={s.informationContainer}>
+    <section className={s.informationContainer} id={'about'}>
       <About />
       <Experience />
       <Education />

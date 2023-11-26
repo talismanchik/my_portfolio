@@ -1,4 +1,6 @@
 @mixin menu {
+  cursor: pointer;
+
   display: flex;
   grid-area: menu;
   gap: 10px;
@@ -11,19 +13,25 @@
 
   list-style: none;
 
-  li {
+  .itemWrapper {
     padding: 0 5px;
 
-    a {
+    .menuItem {
       text-decoration: none;
       letter-spacing: 1.5px;
       outline: none;
+
+      &.active,
+      &:hover,
+      &:focus-within {
+        color: var(--secondary-text);
+      }
     }
 
     &:hover,
-    &:focus-within {
-      transform: scale(1.1);
-      color: var(--secondary-text);
+    &:focus-within,
+    &.active {
+      transform: scale(1.2);
     }
 
     &:active {
