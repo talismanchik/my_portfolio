@@ -11,7 +11,9 @@
     h2 {
       margin: 0;
       padding-top: 40px;
+
       font-size: var(--font-size-xxl);
+      line-height: 52px;
       color: var(--secondary-text);
 
       @media screen and (width < 768px) {
@@ -23,6 +25,7 @@
     p {
       padding-top: 30px;
       font-size: var(--font-size-m);
+      line-height: 26px;
       letter-spacing: 1px;
 
       @media screen and (width < 768px) {
@@ -54,7 +57,8 @@
           width: 100%;
 
           & h3 {
-            font-size: var(--font-size-xl);
+            font-size: var(--font-size-l);
+            line-height: var(--line-height-l);
 
             @media screen and (width < 768px) {
               max-width: 200px;
@@ -72,9 +76,12 @@
 
           .workLocation {
             display: flex;
-            gap: 5px;
+            gap: 8px;
             align-items: center;
             justify-content: center;
+
+            font-size: var(--font-size-xs);
+            line-height: var(--line-height-s);
 
             @media screen and (width < 768px) {
               flex-direction: column;
@@ -91,6 +98,9 @@
               gap: 5px;
               align-items: center;
               justify-content: center;
+
+              font-size: var(--font-size-xs);
+              line-height: var(--line-height-s);
             }
           }
 

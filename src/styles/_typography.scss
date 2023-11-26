@@ -1,22 +1,23 @@
 :root {
-  --font-family-primary: 'Roboto', serif;
+  --font-family-primary: 'Poppins', serif;
 
   // line heights
   --line-height-s: 16px;
   --line-height-m: 24px;
-  --line-height-l: 32px;
+  --line-height-l: 28px;
   --line-height-xl: 40px;
   --line-height-xxl: 52px;
+  --line-height-xxxl: 70px;
 
   // font sizes
-  --font-size-xs: 0.875rem;
-  --font-size-s: 1rem;
-  --font-size-m: 1.125rem;
-  --font-size-l: 1.25rem;
-  --font-size-xl: 1.5rem;
-  --font-size-xxl: 2.25rem;
-  --font-size-xxxl: 2.5rem;
-  --font-size-xxxxl: 3rem;
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 36px;
+  --font-size-xxxl: 40px;
+  --font-size-xxxxl: 48px;
 
   // font weights
   --font-weight-regular: 400;
