@@ -30,14 +30,13 @@ export const Menu = (props: MenuType) => {
   ]
 
   const menuMapped = items.map((el, index) => {
-    const offSetCondition = el.title === 'Contacts' ? -450 : -100
+    //const offSetCondition = el.title === 'Contacts' ? -450 : -90
 
     return (
       <li className={s.itemWrapper} key={index}>
         <Link
           activeClass={s.active}
           className={s.menuItem}
-          offset={offSetCondition}
           onClick={props.onClick}
           smooth
           spy
