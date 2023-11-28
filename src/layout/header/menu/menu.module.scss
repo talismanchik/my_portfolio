@@ -24,7 +24,7 @@
       &.active,
       &:hover,
       &:focus-within {
-        color: red;
+        color: var(--secondary-text);
       }
     }
 
@@ -44,7 +44,7 @@
   @include menu;
 
   /* @media screen and (1000px) { */
-  min-width: 410px;
+  min-width: 400px;
 
   @media screen and (width <= 768px) {
     display: none;
