@@ -43,11 +43,12 @@
 .menuContainer {
   @include menu;
 
-  @media screen and (width < 1000px) {
-    min-width: 400px;
-  }
+  //@media screen and (1000px) {
+  min-width: 400px;
 
-  @media screen and (width < 768px) {
+  //}
+
+  @media screen and (width <= 768px) {
     display: none;
   }
 }
