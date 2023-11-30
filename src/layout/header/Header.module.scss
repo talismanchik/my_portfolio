@@ -23,12 +23,14 @@ header {
     grid-template-columns: auto 155px;
   }
 
-  @media screen and (width < 1000px) {
+  /* stylelint-disable */
+  @media screen and (max-width: 1000px) {
     padding-right: 5%;
     padding-left: 5%;
   }
 
-  @media screen and (width < 768px) {
+  /* stylelint-disable */
+  @media screen and (max-width: 768px) {
     padding-right: 5%;
     padding-left: 5%;
 

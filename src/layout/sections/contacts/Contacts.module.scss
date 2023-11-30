@@ -23,7 +23,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @media screen and (width < 768px) {
+    /* stylelint-disable */
+    @media screen and (max-width: 768px) {
       font-size: var(--font-size-l);
       padding: 10px;
     }

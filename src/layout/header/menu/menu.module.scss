@@ -43,10 +43,13 @@
 .menuContainer {
   @include menu;
 
-  /* @media screen and (1000px) { */
-  min-width: 400px;
+  /* stylelint-disable */
+  @media screen and (max-width: 1000px) {
+    min-width: 400px;
+  }
 
-  @media screen and (width <= 768px) {
+  /* stylelint-disable */
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
