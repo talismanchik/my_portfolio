@@ -8,7 +8,8 @@ type projectType = {
   hrefCod: string
   hrefWeb: string
   name: string
-  src?: string
+  readiness: boolean
+  src: string
   stack: string
 }
 
@@ -18,13 +19,15 @@ export const Project = ({
   hrefCod,
   hrefWeb,
   name,
+  readiness,
   src,
   stack,
 }: projectType) => {
   return (
     <div className={s.projectContainer}>
-      <div className={s.image}>
-        {src && <img alt={name} className={`${classNameImg}`} src={src} />}
+      <div className={` ${!readiness && s.notReadiness} ${s.image}`}>
+        {src != '' && <img alt={name} className={`${classNameImg} `} src={src} />}
+        <span>in progress</span>
       </div>
       <div className={s.projectInform}>
         <h3>{name}</h3>
