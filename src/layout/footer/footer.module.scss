@@ -19,14 +19,12 @@
     -webkit-text-fill-color: transparent;
   }
 
-  /* stylelint-disable */
-  @media screen and (max-width: 1000px) {
+  @media (width < 1000px) {
     padding-right: 5%;
     padding-left: 5%;
   }
 
-  /* stylelint-disable */
-  @media screen and (max-width: 768px) {
+  @media (width < 768px) {
     padding-right: 5%;
     padding-left: 5%;
     font-size: 0.7rem;

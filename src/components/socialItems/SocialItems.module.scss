@@ -31,8 +31,7 @@
 .iconsContainer {
   @include icons;
 
-  /* stylelint-disable */
-  @media screen and (max-width: 768px) {
+  @media (width < 768px) {
     display: none;
   }
 }

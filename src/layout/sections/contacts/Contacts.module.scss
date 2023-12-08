@@ -24,7 +24,7 @@
     -webkit-text-fill-color: transparent;
 
     /* stylelint-disable */
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       font-size: var(--font-size-l);
       padding: 10px;
     }
