@@ -20,13 +20,13 @@
   }
 
   /* stylelint-disable */
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
     padding-right: 5%;
     padding-left: 5%;
   }
 
   /* stylelint-disable */
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     padding-right: 5%;
     padding-left: 5%;
     font-size: 0.7rem;

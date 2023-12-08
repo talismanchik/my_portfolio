@@ -43,7 +43,7 @@ section {
   padding: 100px var(--padding-container-left-right) 0;
 
   /* stylelint-disable */
-  @media (min-width: 768px) {
+  @media (max-width: 1000px) {
     padding-left: 8%;
     padding-right: 8%;
   }
