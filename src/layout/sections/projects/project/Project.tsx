@@ -36,22 +36,22 @@ export const Project = ({
           <b>Tech Stack: </b>
           {stack}
         </h4>
-        <div className={s.refs}>
-          <a className={s.ref} href={hrefWeb}>
-            <Icon
-              className={s.svgClass}
-              height={'20'}
-              iconId={'linkChain'}
-              viewBox={'-1.5 -2 20 20'}
-              width={'20'}
-            />
-            <span>Preview</span>
-          </a>
-          <a className={s.ref} href={hrefCod}>
-            <Icon height={'20'} iconId={'github'} viewBox={'-1.5 -2 100 100'} width={'20'} />
-            View Code
-          </a>
-        </div>
+      </div>
+      <div className={s.refs}>
+        <a className={s.ref} href={hrefWeb}>
+          <Icon
+            className={s.svgClass}
+            height={'20'}
+            iconId={'linkChain'}
+            viewBox={'-1.5 -2 20 20'}
+            width={'20'}
+          />
+          Preview
+        </a>
+        <a className={s.ref} href={hrefCod}>
+          <Icon height={'20'} iconId={'github'} viewBox={'-1.5 -2 100 100'} width={'20'} />
+          View Code
+        </a>
       </div>
     </div>
   )

@@ -2,6 +2,8 @@ import s from './projects.module.scss'
 
 import portfolioIMG from '../../../assets/images/partfolio_screen.png'
 import smailIMG from '../../../assets/images/smail_screen.png'
+import smartCardsIMG from '../../../assets/images/smart_cards_screen.png'
+import todoListIMG from '../../../assets/images/todolist_screen.png'
 import { Project } from './project/Project'
 
 export const Projects = () => {
@@ -29,21 +31,21 @@ export const Projects = () => {
       about:
         'This is an assistant for recording daily activities.\n' +
         'It will help you not to keep a lot of unnecessary information in your head.',
-      hrefCod: 'https://github.com/talismanchik/smail',
-      hrefWeb: '#',
+      hrefCod: 'https://github.com/talismanchik/simple_todo_list',
+      hrefWeb: 'https://simple-todolist-by-talismanchik.vercel.app/',
       name: 'Todo List',
-      readiness: false,
-      src: '',
+      readiness: true,
+      src: todoListIMG,
       stack: 'TS, React, HTML, SCSS',
     },
     {
       about:
         'Taxi Manager is designed to help Uber drivers. With this application, the driver can easily track his working hours and income.',
-      hrefCod: 'https://github.com/talismanchik/smail',
-      hrefWeb: '#',
-      name: 'Taxi Manager',
-      readiness: false,
-      src: '',
+      hrefCod: 'https://github.com/talismanchik/SmartCards',
+      hrefWeb: 'https://smart-cards-app.vercel.app/',
+      name: 'Smart cards',
+      readiness: true,
+      src: smartCardsIMG,
       stack: 'TS, React, Redux, HTML, SCSS',
     },
   ]

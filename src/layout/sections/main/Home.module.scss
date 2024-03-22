@@ -27,6 +27,7 @@
           var(--linear-gradient-3) 30%,
           var(--linear-gradient-2) 120%
         );
+
         /* stylelint-disable */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -67,10 +68,10 @@
     }
   }
 
-  /* stylelint-disable */
   @media (max-width: 950px) {
     flex-direction: column;
     align-items: start;
+
     .textWrapper {
       h1 {
         font-size: 2rem;

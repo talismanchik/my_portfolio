@@ -25,7 +25,7 @@ export const Education = () => {
                 Vilnius
               </div>
             </div>
-            <div className={s.period}>November 2022 - now</div>
+            <div className={s.period}>November 2022 - December 2023</div>
           </div>
         </div>
       </div>
