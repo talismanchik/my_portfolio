@@ -38,7 +38,7 @@ export const Project = ({
         </h4>
       </div>
       <div className={s.refs}>
-        <a className={s.ref} href={hrefWeb}>
+        <a className={s.ref} href={hrefWeb} rel={'noreferrer'} target={'_blank'}>
           <Icon
             className={s.svgClass}
             height={'20'}
@@ -48,7 +48,7 @@ export const Project = ({
           />
           Preview
         </a>
-        <a className={s.ref} href={hrefCod}>
+        <a className={s.ref} href={hrefCod} rel={'noreferrer'} target={'_blank'}>
           <Icon height={'20'} iconId={'github'} viewBox={'-1.5 -2 100 100'} width={'20'} />
           View Code
         </a>
