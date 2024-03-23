@@ -36,17 +36,17 @@ export const Projects = () => {
       name: 'Todo List',
       readiness: true,
       src: todoListIMG,
-      stack: 'TS, React, HTML, SCSS',
+      stack: 'TS, React, RTK, HTML, SCSS',
     },
     {
       about:
-        'Taxi Manager is designed to help Uber drivers. With this application, the driver can easily track his working hours and income.',
+        'This is a memory improvement application. It has decks with flashcards that you can browse through to test your knowledge.',
       hrefCod: 'https://github.com/talismanchik/SmartCards',
       hrefWeb: 'https://smart-cards-app.vercel.app/',
       name: 'Smart cards',
       readiness: true,
       src: smartCardsIMG,
-      stack: 'TS, React, Redux, HTML, SCSS',
+      stack: 'TS, RTK Query, React, HTML, SCSS',
     },
   ]
 
