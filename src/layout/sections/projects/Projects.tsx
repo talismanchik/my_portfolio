@@ -40,7 +40,7 @@ export const Projects = () => {
     },
     {
       about:
-        'This is a memory improvement application. It has decks with flashcards that you can browse through to test your knowledge.',
+        'Only desktop. This is a memory improvement application. It has decks with flashcards that you can browse through to test your knowledge.',
       hrefCod: 'https://github.com/talismanchik/SmartCards',
       hrefWeb: 'https://smart-cards-app.vercel.app/',
       name: 'Smart cards',
