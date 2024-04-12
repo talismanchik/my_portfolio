@@ -23,7 +23,7 @@ export const Home = () => {
         </Tilt>
       </div>
       <a href={cv} rel={'noreferrer'} target={'_blank'}>
-        <button className={s.cvButton}>download CV</button>
+        <button className={s.cvButton}>Show CV</button>
       </a>
     </section>
   )
