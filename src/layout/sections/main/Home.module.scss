@@ -1,70 +1,103 @@
 .homeContainer {
   box-sizing: border-box;
   padding-top: 130px;
-  // padding: 250px var(--padding-container-left-right) 50px;
+  position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  .homeHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 70px;
 
-  .textWrapper {
-    margin-right: 20px;
+    .textWrapper {
+      margin-right: 20px;
 
-    h1 {
-      background: linear-gradient(135deg, var(--secondary-text) -10%, var(--primery-text) 20%);
-      /* stylelint-disable */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: var(--font-size-xxxxl);
-      line-height: var(--line-height-xxxl);
-
-      span {
-        background: linear-gradient(
-          45deg,
-          var(--linear-gradient-1) -10%,
-          var(--linear-gradient-3) 30%,
-          var(--linear-gradient-2) 120%
-        );
-
+      h1 {
+        background: linear-gradient(135deg, var(--secondary-text) -10%, var(--primery-text) 20%);
         /* stylelint-disable */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: var(--font-size-xxxxl);
+        line-height: var(--line-height-xxxl);
+
+        span {
+          background: linear-gradient(
+            45deg,
+            var(--linear-gradient-1) -10%,
+            var(--linear-gradient-3) 30%,
+            var(--linear-gradient-2) 120%
+          );
+
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    .avatarWrapper {
+      margin: 6px;
+      align-self: end;
+      position: relative;
+      width: 250px;
+      height: 250px;
+      min-width: 250px;
+      min-height: 250px;
+      border-radius: 50%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        //margin-right: 6px;
+        inset: -6px;
+        background: linear-gradient(
+          45deg,
+          var(--linear-gradient-1) -10%,
+          var(--linear-gradient-3) 20%,
+          var(--linear-gradient-2) 120%
+        );
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      .avatar {
+        width: 100%;
+        object-fit: cover;
+        object-position: 47% 36%;
+        border-radius: 50%;
       }
     }
   }
 
-  .avatarWrapper {
-    margin: 6px;
-    align-self: end;
-    position: relative;
-    width: 250px;
-    height: 250px;
-    min-width: 250px;
-    min-height: 250px;
-    border-radius: 50%;
+  .cvButton {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
 
-    &::before {
-      content: '';
-      position: absolute;
-      //margin-right: 6px;
-      inset: -6px;
-      background: linear-gradient(
-        45deg,
-        var(--linear-gradient-1) -10%,
-        var(--linear-gradient-3) 20%,
-        var(--linear-gradient-2) 120%
-      );
-      border-radius: 50%;
-      z-index: -1;
+    background: linear-gradient(
+      45deg,
+      var(--linear-gradient-1) -10%,
+      var(--linear-gradient-3) 20%,
+      var(--linear-gradient-2) 120%
+    );
+    border-radius: 999px;
+
+    &:hover {
+      scale: 1.05;
     }
 
-    .avatar {
-      width: 100%;
-      object-fit: cover;
-      object-position: 47% 36%;
-      border-radius: 50%;
+    &:active {
+      scale: 0.95;
+    }
+
+    @media (max-width: 950px) {
+      position: absolute;
+      right: 52px;
+      bottom: 0;
     }
   }
 
