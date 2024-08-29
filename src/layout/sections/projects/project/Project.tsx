@@ -38,18 +38,37 @@ export const Project = ({
         </h4>
       </div>
       <div className={s.refs}>
-        <a className={s.ref} href={hrefWeb} rel={'noreferrer'} target={'_blank'}>
+        <a
+          className={s.ref}
+          href={hrefWeb}
+          rel={'noreferrer'}
+          style={hrefWeb ? {} : { opacity: '0.5', pointerEvents: 'none' }}
+          target={'_blank'}
+        >
           <Icon
             className={s.svgClass}
             height={'20'}
             iconId={'linkChain'}
+            isBlur={!hrefWeb}
             viewBox={'-1.5 -2 20 20'}
             width={'20'}
           />
           Preview
         </a>
-        <a className={s.ref} href={hrefCod} rel={'noreferrer'} target={'_blank'}>
-          <Icon height={'20'} iconId={'github'} viewBox={'-1.5 -2 100 100'} width={'20'} />
+        <a
+          className={s.ref}
+          href={hrefCod}
+          rel={'noreferrer'}
+          style={hrefCod ? {} : { opacity: '0.5', pointerEvents: 'none' }}
+          target={'_blank'}
+        >
+          <Icon
+            height={'20'}
+            iconId={'github'}
+            isBlur={!hrefCod}
+            viewBox={'-1.5 -2 100 100'}
+            width={'20'}
+          />
           View Code
         </a>
       </div>

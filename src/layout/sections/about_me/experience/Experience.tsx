@@ -9,7 +9,7 @@ export const Experience = () => {
       <div className={s.workExperienceWrapper}>
         <div className={s.workExperience}>
           <div className={s.jobInformTop}>
-            <h3>Junior Web Developer</h3>
+            <h3>Founder, Front-end developer</h3>
             <span>
               <b>Part Time</b>
             </span>
@@ -18,19 +18,40 @@ export const Experience = () => {
             <div className={s.workLocation}>
               <div>
                 <Icon height={'12'} iconId={'work'} viewBox={'0 0 16 12'} width={'16'} />
-                Own project
+                Fish Place
               </div>
               <div>
                 <Icon height={'12'} iconId={'location'} viewBox={'0 0 16 12'} width={'16'} />
                 Minsk
               </div>
             </div>
-            <div className={s.period}>October 2023 - now</div>
+            <div className={s.period}>February 2024 - now</div>
           </div>
         </div>
         <div className={s.workExperience}>
           <div className={s.jobInformTop}>
-            <h3>Frontend Developer Internship</h3>
+            <h3>Frontend Developer</h3>
+            <span>
+              <b>Full Time</b>
+            </span>
+          </div>
+          <div className={s.jobInformBottom}>
+            <div className={s.workLocation}>
+              <div>
+                <Icon height={'12'} iconId={'work'} viewBox={'0 0 16 12'} width={'16'} />
+                EL-QUEUE
+              </div>
+              <div>
+                <Icon height={'12'} iconId={'location'} viewBox={'0 0 16 12'} width={'16'} />
+                Moscow
+              </div>
+            </div>
+            <div className={s.period}>May 2023 - august 2024</div>
+          </div>
+        </div>
+        <div className={s.workExperience}>
+          <div className={s.jobInformTop}>
+            <h3>Frontend Developer</h3>
             <span>
               <b>Part Time</b>
             </span>
@@ -39,14 +60,14 @@ export const Experience = () => {
             <div className={s.workLocation}>
               <div>
                 <Icon height={'12'} iconId={'work'} viewBox={'0 0 16 12'} width={'16'} />
-                ITincubator
+                Smart Cards
               </div>
               <div>
                 <Icon height={'12'} iconId={'location'} viewBox={'0 0 16 12'} width={'16'} />
-                Vilnius
+                Moscow
               </div>
             </div>
-            <div className={s.period}>June 2023 - now</div>
+            <div className={s.period}>July 2022 - may 2023</div>
           </div>
         </div>
       </div>

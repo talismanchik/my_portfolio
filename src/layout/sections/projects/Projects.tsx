@@ -1,5 +1,7 @@
 import s from './projects.module.scss'
 
+import fishPlaceIMG from '../../../assets/images/Logo.png'
+import elQueueIMG from '../../../assets/images/el-queue.png'
 import portfolioIMG from '../../../assets/images/partfolio_screen.png'
 import smailIMG from '../../../assets/images/smail_screen.png'
 import smartCardsIMG from '../../../assets/images/smart_cards_screen.png'
@@ -10,18 +12,39 @@ export const Projects = () => {
   const projects = [
     {
       about:
-        'Smail is a social network. It was written by me for educational purposes. Currently being added',
-      hrefCod: 'https://github.com/talismanchik/smail',
-      hrefWeb: '#',
-      name: 'Smail',
-      readiness: false,
-      src: smailIMG,
-      stack: 'TS, React, Redux, HTML, SCSS',
+        'Thanks to this application, anglers will be able to share their catches and find the best fishing spots.',
+      hrefCod: '',
+      hrefWeb: '',
+      name: 'el-queue',
+      readiness: true,
+      src: fishPlaceIMG,
+      stack: 'TS, React, RTK, Web Socket, HTML, SCSS',
     },
+    {
+      about:
+        'This application is designed for hospitals, clinics, banks, etc., allowing the organization of customer service processes and facilitating the work of employees.',
+      hrefCod: '',
+      hrefWeb: '',
+      name: 'el-queue',
+      readiness: true,
+      src: elQueueIMG,
+      stack: 'TS, React, RTK, Web Socket, HTML, SCSS',
+    },
+    {
+      about:
+        'Only desktop. This is a memory improvement application. It has decks with flashcards that you can browse through to test your knowledge.',
+      hrefCod: 'https://github.com/talismanchik/SmartCards',
+      hrefWeb: 'https://smart-cards-app.vercel.app/',
+      name: 'Smart cards',
+      readiness: true,
+      src: smartCardsIMG,
+      stack: 'TS, RTK Query, React, HTML, SCSS',
+    },
+
     {
       about: 'This is the project you are seeing now.',
       hrefCod: 'https://github.com/talismanchik/my_portfolio',
-      hrefWeb: '#',
+      hrefWeb: '',
       name: 'Portfolio',
       readiness: true,
       src: portfolioIMG,
@@ -40,13 +63,13 @@ export const Projects = () => {
     },
     {
       about:
-        'Only desktop. This is a memory improvement application. It has decks with flashcards that you can browse through to test your knowledge.',
-      hrefCod: 'https://github.com/talismanchik/SmartCards',
-      hrefWeb: 'https://smart-cards-app.vercel.app/',
-      name: 'Smart cards',
-      readiness: true,
-      src: smartCardsIMG,
-      stack: 'TS, RTK Query, React, HTML, SCSS',
+        'Smail is a social network. It was written by me for educational purposes. Currently being added',
+      hrefCod: 'https://github.com/talismanchik/smail',
+      hrefWeb: '',
+      name: 'Smail',
+      readiness: false,
+      src: smailIMG,
+      stack: 'TS, React, Redux, HTML, SCSS',
     },
   ]
 

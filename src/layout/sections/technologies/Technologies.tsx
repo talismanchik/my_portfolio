@@ -18,6 +18,11 @@ export const Technologies = () => {
     { iconId: 'figma', viewBox: '-15 0 90 90' },
     { iconId: 'git', viewBox: '-2 -1 108 108' },
     { iconId: 'github', viewBox: '-1 -1 90 90' },
+    { iconId: 'swagger', viewBox: '-0 -0 256 256' },
+    { iconId: 'rhf', viewBox: '-0 -0 200 200' },
+    { iconId: 'MUI', viewBox: '-0 -0 600 457' },
+    { iconId: 'ant', viewBox: '-0 -0 256 256' },
+    { iconId: 'mapbox', viewBox: '250 250 530 530' },
   ]
 
   const technologiesMapped = technologies.map((el, index) => {
