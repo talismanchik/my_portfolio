@@ -24,7 +24,7 @@ export const Projects = () => {
       about:
         'This application is designed for hospitals, clinics, banks, etc., allowing the organization of customer service processes and facilitating the work of employees.',
       hrefCod: '',
-      hrefWeb: '',
+      hrefWeb: 'http://el-queue.ru/',
       name: 'el-queue',
       readiness: true,
       src: elQueueIMG,
